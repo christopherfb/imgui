@@ -22,11 +22,16 @@
 
 // Library Version
 // (Integer encoded as XYYZZ for use in #if preprocessor conditionals, e.g. '#if IMGUI_VERSION_NUM > 12345')
-#define IMGUI_VERSION               "1.89.3 WIP"
-#define IMGUI_VERSION_NUM           18927
-#define IMGUI_HAS_TABLE
-#define IMGUI_HAS_VIEWPORT          // Viewport WIP branch
-#define IMGUI_HAS_DOCK              // Docking WIP branch
+
+// [CN] Commenting out this code gets rid of a lot of warnings about macros being redefined (they are redefined
+//      around line 79, so that's what's causing it.
+//      Not sure if this is the right solution or whether it will bite me in the butt later on.
+// 
+//#define IMGUI_VERSION               "1.89.3 WIP"
+//#define IMGUI_VERSION_NUM           18927
+//#define IMGUI_HAS_TABLE
+//#define IMGUI_HAS_VIEWPORT          // Viewport WIP branch
+//#define IMGUI_HAS_DOCK              // Docking WIP branch
 
 /*
 
